@@ -29,8 +29,16 @@
   </div>
 </nav>
 
-<section class="hero">
-  <div class="hero-inner">
+<section class="hero" style="position:relative;overflow:hidden;">
+  <!-- Faded owl background -->
+  <div style="position:absolute;inset:0;
+              background:url('owl-logo.jpg') center/55% no-repeat;
+              opacity:0.10;pointer-events:none;z-index:0;"></div>
+  <!-- Dark gradient overlay to keep text readable -->
+  <div style="position:absolute;inset:0;
+              background:linear-gradient(135deg,rgba(26,31,26,0.92) 0%,rgba(45,74,30,0.80) 60%,rgba(90,122,42,0.70) 100%);
+              z-index:1;pointer-events:none;"></div>
+  <div class="hero-inner" style="position:relative;z-index:2;">
     <p class="section-label">British Columbia, Canada</p>
     <h1>Building the Foundation for <span>Indigenous-Led</span> Biodiversity Conservation in BC</h1>
     <p class="sub">A BC-based Benefit Company bridging emerging nature finance and Indigenous governance and stewardship systems.</p>
@@ -48,13 +56,13 @@
       <div class="card">
         <div class="card-icon">🌿</div>
         <h3>Our Approach</h3>
-        <p>Relationship-first, community-led co-design with BC First Nations — from initial outreach to pilot-ready governance frameworks.</p>
+        <p>Relationship-first, community-led co-design with BC First Nations &mdash; from initial outreach to pilot-ready governance frameworks.</p>
         <a href="about.html" style="color:var(--mid);font-weight:600;font-size:0.9rem">Learn more &rarr;</a>
       </div>
       <div class="card">
         <div class="card-icon">🦉</div>
         <h3>The Methodology</h3>
-        <p>The Savimbo ISBM — co-developed by Indigenous stewards and the basis for the world's first certified biodiversity credits.</p>
+        <p>The Savimbo ISBM &mdash; co-developed by Indigenous stewards and the basis for the world's first certified biodiversity credits.</p>
         <a href="work.html" style="color:var(--mid);font-weight:600;font-size:0.9rem">Learn more &rarr;</a>
       </div>
       <div class="card">
@@ -67,11 +75,14 @@
   </div>
 </section>
 
-<section class="section-dark">
-  <div class="section-inner">
+<section class="section-dark" style="position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;
+              background:url('owl-logo.jpg') center/45% no-repeat;
+              opacity:0.05;pointer-events:none;"></div>
+  <div class="section-inner" style="position:relative;z-index:1;">
     <p class="section-label">Our Commitment</p>
     <h2>Legally Bound to Our Values</h2>
-    <p>As a Benefit Company, our Articles of Incorporation legally bind us to socio-ecological priorities — environmental conservation, Indigenous governance, Free Prior and Informed Consent (FPIC), and data sovereignty. These are not voluntary commitments. They are enforced through our legal structure and annual reporting requirements.</p>
+    <p>As a Benefit Company, our Articles of Incorporation legally bind us to socio-ecological priorities &mdash; environmental conservation, Indigenous governance, Free Prior and Informed Consent (FPIC), and data sovereignty. These are not voluntary commitments. They are enforced through our legal structure and annual reporting requirements.</p>
     <div class="card-grid-3" style="margin-top:2rem">
       <div class="card" style="background:#2d4a1e;border-color:#3d6a2e">
         <h3 style="color:var(--lime)">Indigenous Governance &amp; FPIC</h3>
@@ -89,6 +100,21 @@
   </div>
 </section>
 
+<!-- LYNX FULL-WIDTH BANNER DIVIDER -->
+<div style="width:100%;height:340px;
+            background:url('lynx-banner.jpg') center/cover no-repeat;
+            position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;
+              background:linear-gradient(to right,rgba(26,31,26,0.55) 0%,rgba(26,31,26,0.1) 50%,rgba(26,31,26,0.55) 100%);"></div>
+  <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:1;">
+    <div style="text-align:center;color:white;max-width:600px;padding:0 2rem;">
+      <p style="font-size:0.8rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;">Nature Finance &amp; Indigenous Governance</p>
+      <p style="font-size:1.4rem;font-weight:800;line-height:1.3;margin:0;">"Supporting Indigenous-led pilot projects is one of three <em style="color:var(--lime)">Quick Wins</em> needed before 2030."</p>
+      <p style="font-size:0.85rem;color:#cdd9c0;margin-top:0.75rem;">— Nature Investment Hub &amp; IISD, 2025 National Roundtable</p>
+    </div>
+  </div>
+</div>
+
 <section class="section-light">
   <div class="section-inner" style="text-align:center">
     <p class="section-label">Recognised by</p>
@@ -98,12 +124,15 @@
   </div>
 </section>
 
-<footer>
-  <strong>InSight Biodiversity</strong> &nbsp;|&nbsp; BC Benefit Company<br>
-  <a href="mailto:info@insightbiodiversity.ca">info@insightbiodiversity.ca</a>
-  &nbsp;|&nbsp;
-  <a href="https://www.insightbiodiversity.ca">www.insightbiodiversity.ca</a><br><br>
-  &copy; 2026 InSight Biodiversity. All rights reserved.
+<footer style="position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:url('owl-logo.jpg') center/40% no-repeat;opacity:0.04;pointer-events:none;"></div>
+  <div style="position:relative;z-index:1;">
+    <strong>InSight Biodiversity</strong> &nbsp;|&nbsp; BC Benefit Company<br>
+    <a href="mailto:info@insightbiodiversity.ca">info@insightbiodiversity.ca</a>
+    &nbsp;|&nbsp;
+    <a href="https://www.insightbiodiversity.ca">www.insightbiodiversity.ca</a><br><br>
+    &copy; 2026 InSight Biodiversity. All rights reserved.
+  </div>
 </footer>
 </body>
 </html>
