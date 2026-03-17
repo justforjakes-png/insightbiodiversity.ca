@@ -28,26 +28,26 @@
     <span></span><span></span><span></span>
   </div>
 </nav>
-
-<!-- Split hero: text left, owl right -->
 <section style="background:var(--dark);padding:0;overflow:hidden;">
-  <div style="display:flex;flex-wrap:wrap;min-height:360px;">
-    <!-- Left: text -->
-    <div style="flex:1 1 340px;padding:4rem 3rem;display:flex;flex-direction:column;justify-content:center;z-index:1;">
-      <p class="section-label">About Us</p>
-      <h1 style="color:white;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:1rem;">Who We Are</h1>
-      <p style="color:#cdd9c0;font-size:1.05rem;max-width:480px;">A team of conservation finance practitioners, committed to building Indigenous-led biodiversity credit pilots in British Columbia.</p>
-    </div>
-    <!-- Right: owl panel -->
-    <div style="flex:0 0 360px;min-height:360px;
+  <div style="display:flex;flex-wrap:wrap;min-height:380px;">
+    <!-- Left: owl image panel -->
+    <div style="flex:0 0 360px;min-height:380px;
                 background:url('owl-logo.jpg') center/cover no-repeat;
-                position:relative;">
+                position:relative;order:0;">
       <div style="position:absolute;inset:0;
-                  background:linear-gradient(to right,var(--dark) 0%,rgba(26,31,26,0.2) 40%,rgba(26,31,26,0.0) 100%);"></div>
+                  background:linear-gradient(to left,var(--dark) 0%,rgba(26,31,26,0.15) 45%,rgba(26,31,26,0.0) 100%);"></div>
+    </div>
+    <!-- Right: text -->
+    <div style="flex:1 1 340px;padding:4rem 3rem;display:flex;
+                flex-direction:column;justify-content:center;order:1;">
+      <p class="section-label">About Us</p>
+      <h1 style="color:white;font-size:clamp(1.6rem,3.2vw,2.5rem);
+                 font-weight:800;line-height:1.2;margin-bottom:1rem;">Who We Are</h1>
+      <p style="color:#cdd9c0;font-size:1.05rem;max-width:500px;margin-bottom:0;">A team of conservation finance practitioners, committed to building Indigenous-led biodiversity credit pilots in British Columbia.</p>
+      
     </div>
   </div>
 </section>
-
 <section>
   <div class="section-inner">
     <p class="section-label">Our Mission</p>
@@ -63,26 +63,10 @@
     <h2>A Benefit Company Built for This Work</h2>
     <p>Our Articles of Incorporation legally bind us to socio-ecological priorities including environmental conservation, Indigenous governance, FPIC, and data sovereignty. This is not voluntary &mdash; it is enforced through our legal structure and annual reporting requirements.</p>
     <div class="card-grid-2" style="margin-top:2rem">
-      <div class="card">
-        <div class="card-icon">🌱</div>
-        <h3>Indigenous Governance &amp; FPIC</h3>
-        <p>All work proceeds only with Free, Prior and Informed Consent. Decision-making authority rests with Nations at every stage.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🔒</div>
-        <h3>Data Sovereignty</h3>
-        <p>Biodiversity data, photos, and cultural information remain under Nation control. We co-design governance protocols with each partner community.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">📖</div>
-        <h3>Open-Access Knowledge</h3>
-        <p>All frameworks, templates, and tools are freely shared to build field-wide capacity across other Nations and allied organizations.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🤝</div>
-        <h3>Non-Proprietary Approach</h3>
-        <p>We are interested in building field-wide capacity rather than competitive advantage. Our learning belongs to the broader conservation community.</p>
-      </div>
+      <div class="card"><div class="card-icon">🌱</div><h3>Indigenous Governance &amp; FPIC</h3><p>All work proceeds only with Free, Prior and Informed Consent. Decision-making authority rests with Nations at every stage.</p></div>
+      <div class="card"><div class="card-icon">🔒</div><h3>Data Sovereignty</h3><p>Biodiversity data, photos, and cultural information remain under Nation control. We co-design governance protocols with each partner community.</p></div>
+      <div class="card"><div class="card-icon">📖</div><h3>Open-Access Knowledge</h3><p>All frameworks, templates, and tools are freely shared to build field-wide capacity across other Nations and allied organizations.</p></div>
+      <div class="card"><div class="card-icon">🤝</div><h3>Non-Proprietary Approach</h3><p>We are interested in building field-wide capacity rather than competitive advantage. Our learning belongs to the broader conservation community.</p></div>
     </div>
   </div>
 </section>
@@ -94,11 +78,7 @@
     <div class="team-grid">
       <div class="team-card">
         <div style="background:var(--light);padding:2rem;text-align:center;">
-          <img src="connor-haynes.jpg" alt="Connor Haynes"
-            style="width:140px;height:140px;object-fit:cover;border-radius:50%;
-                   display:block;margin:0 auto;
-                   border:4px solid var(--forest);
-                   box-shadow:0 4px 16px rgba(45,74,30,0.25);">
+          <img src="connor-haynes.jpg" alt="Connor Haynes" style="width:140px;height:140px;object-fit:cover;border-radius:50%;display:block;margin:0 auto;border:4px solid var(--forest);box-shadow:0 4px 16px rgba(45,74,30,0.25);">
         </div>
         <div class="team-info">
           <h3 style="text-align:center">Connor Haynes</h3>
@@ -108,11 +88,7 @@
       </div>
       <div class="team-card">
         <div style="background:var(--light);padding:2rem;text-align:center;">
-          <img src="vivekan-jeyagaran.jpg" alt="Vivekan Jeyagaran"
-            style="width:140px;height:140px;object-fit:cover;border-radius:50%;
-                   display:block;margin:0 auto;
-                   border:4px solid var(--forest);
-                   box-shadow:0 4px 16px rgba(45,74,30,0.25);">
+          <img src="vivekan-jeyagaran.jpg" alt="Vivekan Jeyagaran" style="width:140px;height:140px;object-fit:cover;border-radius:50%;display:block;margin:0 auto;border:4px solid var(--forest);box-shadow:0 4px 16px rgba(45,74,30,0.25);">
         </div>
         <div class="team-info">
           <h3 style="text-align:center">Vivekan Jeyagaran</h3>
@@ -122,11 +98,7 @@
       </div>
       <div class="team-card">
         <div style="background:var(--light);padding:2rem;text-align:center;">
-          <img src="jake-raynard.jpg" alt="Jake Raynard"
-            style="width:140px;height:140px;object-fit:cover;border-radius:50%;
-                   display:block;margin:0 auto;
-                   border:4px solid var(--forest);
-                   box-shadow:0 4px 16px rgba(45,74,30,0.25);">
+          <img src="jake-raynard.jpg" alt="Jake Raynard" style="width:140px;height:140px;object-fit:cover;border-radius:50%;display:block;margin:0 auto;border:4px solid var(--forest);box-shadow:0 4px 16px rgba(45,74,30,0.25);">
         </div>
         <div class="team-info">
           <h3 style="text-align:center">Jake Raynard</h3>

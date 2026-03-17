@@ -28,15 +28,26 @@
     <span></span><span></span><span></span>
   </div>
 </nav>
-
-<section class="hero" style="padding:4rem 2rem 3rem">
-  <div class="hero-inner">
-    <p class="section-label">Contact</p>
-    <h1>Let's Start a Conversation</h1>
-    <p class="sub">We welcome conversations with Indigenous Communities, funders, researchers, and allied organizations who share our commitment to Indigenous-led conservation.</p>
+<section style="background:var(--dark);padding:0;overflow:hidden;">
+  <div style="display:flex;flex-wrap:wrap;min-height:380px;">
+    <!-- Left: owl image panel -->
+    <div style="flex:0 0 360px;min-height:380px;
+                background:url('owl-logo.jpg') center/cover no-repeat;
+                position:relative;order:0;">
+      <div style="position:absolute;inset:0;
+                  background:linear-gradient(to left,var(--dark) 0%,rgba(26,31,26,0.15) 45%,rgba(26,31,26,0.0) 100%);"></div>
+    </div>
+    <!-- Right: text -->
+    <div style="flex:1 1 340px;padding:4rem 3rem;display:flex;
+                flex-direction:column;justify-content:center;order:1;">
+      <p class="section-label">Contact</p>
+      <h1 style="color:white;font-size:clamp(1.6rem,3.2vw,2.5rem);
+                 font-weight:800;line-height:1.2;margin-bottom:1rem;">Let's Start a Conversation</h1>
+      <p style="color:#cdd9c0;font-size:1.05rem;max-width:500px;margin-bottom:0;">We welcome conversations with Indigenous Communities, funders, researchers, and allied organizations who share our commitment to Indigenous-led conservation.</p>
+      
+    </div>
   </div>
 </section>
-
 <section>
   <div class="section-inner">
     <div class="card-grid-2">
@@ -46,30 +57,15 @@
         <p>InSight Biodiversity is based in British Columbia, Canada. We work across BC and are open to national and international partnerships aligned with our values.</p>
         <p><strong>Email:</strong> <a href="mailto:info@insightbiodiversity.ca" style="color:var(--mid)">info@insightbiodiversity.ca</a></p>
         <p><strong>Web:</strong> <a href="https://www.insightbiodiversity.ca" style="color:var(--mid)">www.insightbiodiversity.ca</a></p>
-        <p style="margin-top:1.5rem;font-size:0.9rem;color:#5a7a2a">
-          <strong>InSight Biodiversity</strong> is a registered Benefit Company in British Columbia, Canada.<br>
-          A formal Hub Partner of the Nature Investment Hub (natureinvestmenthub.ca).
-        </p>
+        <p style="margin-top:1.5rem;font-size:0.9rem;color:#5a7a2a"><strong>InSight Biodiversity</strong> is a registered Benefit Company in British Columbia, Canada.<br>A formal Hub Partner of the Nature Investment Hub (natureinvestmenthub.ca).</p>
       </div>
       <div>
         <div class="contact-form">
           <p class="section-label">Send a Message</p>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name">
-          </div>
-          <div class="form-group">
-            <label for="org">Organization</label>
-            <input type="text" id="org" name="org" placeholder="Your organization (optional)">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell us about your interest or question..."></textarea>
-          </div>
+          <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" placeholder="Your name"></div>
+          <div class="form-group"><label for="org">Organization</label><input type="text" id="org" name="org" placeholder="Your organization (optional)"></div>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="your@email.com"></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us about your interest or question..."></textarea></div>
           <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
           <p style="font-size:0.8rem;color:#7a9a68;margin-top:0.75rem;text-align:center">We aim to respond within 3&ndash;5 business days.</p>
         </div>
@@ -81,16 +77,19 @@
 <section class="section-dark">
   <div class="section-inner" style="text-align:center">
     <h2>A Note on Our Engagement Approach</h2>
-    <p style="max-width:640px;margin:0 auto">We are relationship-first. If you are a First Nation or Indigenous Community in BC interested in learning about biodiversity credits and nature finance, we are happy to have an initial conversation with no pressure or commitment. We will never make promises of revenue generation or outcomes we cannot guarantee.</p>
+    <p style="max-width:640px;margin:0 auto">We are relationship-first. If you are a First Nation or Indigenous Community in BC interested in learning about biodiversity credits and nature finance, we are happy to have an initial conversation with no pressure or commitment.</p>
   </div>
 </section>
 
-<footer>
-  <strong>InSight Biodiversity</strong> &nbsp;|&nbsp; BC Benefit Company<br>
-  <a href="mailto:info@insightbiodiversity.ca">info@insightbiodiversity.ca</a>
-  &nbsp;|&nbsp;
-  <a href="https://www.insightbiodiversity.ca">www.insightbiodiversity.ca</a><br><br>
-  &copy; 2026 InSight Biodiversity. All rights reserved.
+<footer style="position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:url('owl-logo.jpg') center/40% no-repeat;opacity:0.04;pointer-events:none;"></div>
+  <div style="position:relative;z-index:1;">
+    <strong>InSight Biodiversity</strong> &nbsp;|&nbsp; BC Benefit Company<br>
+    <a href="mailto:info@insightbiodiversity.ca">info@insightbiodiversity.ca</a>
+    &nbsp;|&nbsp;
+    <a href="https://www.insightbiodiversity.ca">www.insightbiodiversity.ca</a><br><br>
+    &copy; 2026 InSight Biodiversity. All rights reserved.
+  </div>
 </footer>
 </body>
 </html>

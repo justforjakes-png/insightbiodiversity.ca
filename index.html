@@ -28,25 +28,26 @@
     <span></span><span></span><span></span>
   </div>
 </nav>
-
-<section class="hero" style="position:relative;overflow:hidden;">
-  <!-- Faded owl background -->
-  <div style="position:absolute;inset:0;
-              background:url('owl-logo.jpg') center/55% no-repeat;
-              opacity:0.10;pointer-events:none;z-index:0;"></div>
-  <!-- Dark gradient overlay to keep text readable -->
-  <div style="position:absolute;inset:0;
-              background:linear-gradient(135deg,rgba(26,31,26,0.92) 0%,rgba(45,74,30,0.80) 60%,rgba(90,122,42,0.70) 100%);
-              z-index:1;pointer-events:none;"></div>
-  <div class="hero-inner" style="position:relative;z-index:2;">
-    <p class="section-label">British Columbia, Canada</p>
-    <h1>Building the Foundation for <span>Indigenous-Led</span> Biodiversity Conservation in BC</h1>
-    <p class="sub">A BC-based Benefit Company bridging emerging nature finance and Indigenous governance and stewardship systems.</p>
-    <a href="work.html" class="btn btn-primary">Our Work</a>
-    <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+<section style="background:var(--dark);padding:0;overflow:hidden;">
+  <div style="display:flex;flex-wrap:wrap;min-height:380px;">
+    <!-- Left: owl image panel -->
+    <div style="flex:0 0 360px;min-height:380px;
+                background:url('owl-logo.jpg') center/cover no-repeat;
+                position:relative;order:0;">
+      <div style="position:absolute;inset:0;
+                  background:linear-gradient(to left,var(--dark) 0%,rgba(26,31,26,0.15) 45%,rgba(26,31,26,0.0) 100%);"></div>
+    </div>
+    <!-- Right: text -->
+    <div style="flex:1 1 340px;padding:4rem 3rem;display:flex;
+                flex-direction:column;justify-content:center;order:1;">
+      <p class="section-label">British Columbia, Canada</p>
+      <h1 style="color:white;font-size:clamp(1.6rem,3.2vw,2.5rem);
+                 font-weight:800;line-height:1.2;margin-bottom:1rem;">Building the Foundation for <span style="color:var(--lime)">Indigenous-Led</span> Biodiversity Conservation in BC</h1>
+      <p style="color:#cdd9c0;font-size:1.05rem;max-width:500px;margin-bottom:1.5rem;">A BC-based Benefit Company bridging emerging nature finance and Indigenous governance and stewardship systems.</p>
+      <a href="work.html" class="btn btn-primary">Our Work</a><a href="contact.html" class="btn btn-outline">Get In Touch</a>
+    </div>
   </div>
 </section>
-
 <section>
   <div class="section-inner">
     <p class="section-label">Who We Are</p>
@@ -76,9 +77,7 @@
 </section>
 
 <section class="section-dark" style="position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;
-              background:url('owl-logo.jpg') center/45% no-repeat;
-              opacity:0.05;pointer-events:none;"></div>
+  <div style="position:absolute;inset:0;background:url('owl-logo.jpg') center/45% no-repeat;opacity:0.05;pointer-events:none;"></div>
   <div class="section-inner" style="position:relative;z-index:1;">
     <p class="section-label">Our Commitment</p>
     <h2>Legally Bound to Our Values</h2>
@@ -101,16 +100,13 @@
 </section>
 
 <!-- LYNX FULL-WIDTH BANNER DIVIDER -->
-<div style="width:100%;height:340px;
-            background:url('lynx-banner.jpg') center/cover no-repeat;
-            position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;
-              background:linear-gradient(to right,rgba(26,31,26,0.55) 0%,rgba(26,31,26,0.1) 50%,rgba(26,31,26,0.55) 100%);"></div>
+<div style="width:100%;height:340px;background:url('lynx-banner.jpg') center/cover no-repeat;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(26,31,26,0.6) 0%,rgba(26,31,26,0.1) 50%,rgba(26,31,26,0.6) 100%);"></div>
   <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:1;">
     <div style="text-align:center;color:white;max-width:600px;padding:0 2rem;">
       <p style="font-size:0.8rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;">Nature Finance &amp; Indigenous Governance</p>
       <p style="font-size:1.4rem;font-weight:800;line-height:1.3;margin:0;">"Supporting Indigenous-led pilot projects is one of three <em style="color:var(--lime)">Quick Wins</em> needed before 2030."</p>
-      <p style="font-size:0.85rem;color:#cdd9c0;margin-top:0.75rem;">— Nature Investment Hub &amp; IISD, 2025 National Roundtable</p>
+      <p style="font-size:0.85rem;color:#cdd9c0;margin-top:0.75rem;">&mdash; Nature Investment Hub &amp; IISD, 2025 National Roundtable</p>
     </div>
   </div>
 </div>
