@@ -33,8 +33,10 @@
 <section style="background:var(--dark);padding:0;overflow:hidden;">
   <div style="display:flex;flex-wrap:wrap;min-height:380px;">
     <div style="flex:0 0 500px;min-height:380px;
-                background:url('owl-logo.jpg') center/contain no-repeat;
+                background:url('owl-logo.jpg') center/cover no-repeat;
                 position:relative;order:0;">
+      <div style="position:absolute;inset:0;
+                  background:linear-gradient(to left,var(--dark) 0%,rgba(26,31,26,0.15) 45%,rgba(26,31,26,0.0) 100%);"></div>
     </div>
     <div style="flex:1 1 340px;padding:4rem 3rem 4rem 5rem;display:flex;
                 flex-direction:column;justify-content:center;order:1;">
